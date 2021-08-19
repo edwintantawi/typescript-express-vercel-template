@@ -1,4 +1,4 @@
-# Javascript-Express-Vercel [Boilerplate]
+# Typescript-Express-Vercel [Boilerplate]
 
 ## Tech Stack
 
