@@ -3,9 +3,9 @@
 ## Tech Stack
 
 - MVC Architecture
-- Javascript
+- Typescript
 - Node JS
 - Express JS
 - EJS
 - Vercel
-- Nodemon
+- Ts-node/dev
