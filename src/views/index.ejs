@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>Javascript-Express-Vercel</title>
+  </head>
+  <body>
+    <img src="/assets/image.png" alt="image" />
+    <h1>Javascript-Express-Vercel</h1>
+    <em>Endpoints:</em>
+    <ul>
+      <% endpoints.forEach((endpoint) => { %>
+      <li><a href="<%= endpoint %>"><%= endpoint %></a></li>
+      <% }) %>
+    </ul>
+  </body>
+</html>

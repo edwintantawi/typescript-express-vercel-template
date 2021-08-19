@@ -1,0 +1,14 @@
+{
+  "endpoints": ["/api/users", "/api/admins"],
+  "admins": [
+    { "uid": "001", "username": "Larry Page" },
+    { "uid": "002", "username": "Sergey Brin" }
+  ],
+  "users": [
+    { "uid": "001", "username": "Bill Gates" },
+    { "uid": "002", "username": "Mark Zuck" },
+    { "uid": "003", "username": "Elon Musk" },
+    { "uid": "004", "username": "Steve Jobs" },
+    { "uid": "005", "username": "Jeff Bezos" }
+  ]
+}
