@@ -1,7 +1,8 @@
-const { UserModel } = require('../models');
+import { Request, Response } from 'express';
+import { UserModel } from '../models';
 
-class UserController {
-  static async getAll(req, res) {
+export class UserController {
+  static async getAll(req: Request, res: Response) {
     try {
       const allUsers = await UserModel.getAll();
       res.status(200).json(allUsers);
@@ -10,5 +11,3 @@ class UserController {
     }
   }
 }
-
-module.exports = UserController;

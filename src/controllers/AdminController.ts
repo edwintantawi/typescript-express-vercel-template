@@ -1,7 +1,8 @@
-const { AdminModel } = require('../models');
+import { Request, Response } from 'express';
+import { AdminModel } from '../models';
 
-class AdminController {
-  static async getAll(req, res) {
+export class AdminController {
+  static async getAll(req: Request, res: Response) {
     try {
       const allUsers = await AdminModel.getAll();
       res.status(200).json(allUsers);
@@ -10,5 +11,3 @@ class AdminController {
     }
   }
 }
-
-module.exports = AdminController;

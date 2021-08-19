@@ -1,7 +1,8 @@
-const { EndpointModel } = require('../models');
+import { Request, Response } from 'express';
+import { EndpointModel } from '../models';
 
-class MainController {
-  static async getAll(req, res) {
+export class MainController {
+  static async getAll(req: Request, res: Response) {
     try {
       const endpoints = await EndpointModel.getAll();
       res.render('index', { endpoints });
@@ -10,5 +11,3 @@ class MainController {
     }
   }
 }
-
-module.exports = MainController;

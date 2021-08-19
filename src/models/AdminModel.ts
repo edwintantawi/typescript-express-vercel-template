@@ -1,11 +1,11 @@
-class AdminModel {
+import db from '../db.json';
+
+export class AdminModel {
   static getAll() {
     return new Promise((resolve, reject) => {
-      const allAdmin = require('../db.json').admins;
+      const allAdmin = db.admins;
       if (!allAdmin) reject(null);
       resolve(allAdmin);
     });
   }
 }
-
-module.exports = AdminModel;

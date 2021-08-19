@@ -1,11 +1,11 @@
-class EndpointModel {
+import db from '../db.json';
+
+export class EndpointModel {
   static getAll() {
     return new Promise((resolve, reject) => {
-      const allEndpoint = require('../db.json').endpoints;
+      const allEndpoint = db.endpoints;
       if (!allEndpoint) reject(null);
       resolve(allEndpoint);
     });
   }
 }
-
-module.exports = EndpointModel;
